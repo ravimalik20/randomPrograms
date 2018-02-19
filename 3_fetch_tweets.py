@@ -92,7 +92,8 @@ class TweetFetchWorker(Thread):
 		final_data = list(self.tweets.values())
 
 		f = open(TweetFetchWorker.TWEETS_OUTPUT_FILE, "w")
-		f.write(json.dumps(final_data, sort_keys = True, indent = 4))
+		f.write(json.dumps(final_data, sort_keys = True, indent = 4,
+			ensure_ascii = True))
 		f.close()
 
 		print ("Count: {}".format(len(self.tweets)))
