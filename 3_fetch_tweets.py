@@ -52,7 +52,8 @@ class TweetFetchWorker(Thread):
 							'text': tweet['text'],
 							'geo': tweet['geo'],
 							'coordinates': tweet['coordinates'],
-							'created_at': tweet['created_at']
+							'created_at': tweet['created_at'],
+							'location': tweet['user']['location'],
 						}
 
 						self.tweets[tweet['id']] = obj
