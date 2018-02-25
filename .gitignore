@@ -1,3 +1,5 @@
 a.out
 *.o
 *~
+tweets.json
+tweets.pickle
