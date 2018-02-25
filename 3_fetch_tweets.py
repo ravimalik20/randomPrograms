@@ -11,7 +11,7 @@ CONSUMER_SECRET = 'c4os7vhVH33UYNYgt6mHAcbrSECAR8ZZugFKeyRmf3pFriXbjb'
 
 class TweetFetchWorker(Thread):
 	TWEETS_PER_REQUEST = 99
-	MAX_TWEETS = 200
+	MAX_TWEETS = 10000
 	TWEETS_TEMP_FILE = "tweets.pickle"
 	TWEETS_OUTPUT_FILE = "tweets.json"
 
